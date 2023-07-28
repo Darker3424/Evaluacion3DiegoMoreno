@@ -11,4 +11,28 @@
         android:layout_height="match_parent"
         android:text="Info" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginTop="10dp"
+            android:text="Information"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="Soy Diego Moreno, esta App se basa en el uso de un bottom bar, para mostrar distintas pestañas de una misma api, asi se ve más organizado y con mejor estetica" />
+    </LinearLayout>
+
 </FrameLayout>
