@@ -25,18 +25,18 @@ class RVProductsAdapter(var products: List<Product>): RecyclerView.Adapter<RVPro
 
     class ProductVH(private val binding: ItemProductBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
-            binding.txtCharacterName.text = product.fullName
+            binding.txtInfoName.text = product.fullName
         if (product.imgUrl.isNotEmpty()){
             binding.imgProduct.load(product.imgUrl)
         } else{
             binding.imgProduct.setImageResource(R.drawable.gots)
         }
 
-        if (product.isFavorite){
-            binding.btnFavorite.setImageResource(R.drawable.favorite_fill)
-        }else {
-            binding.btnFavorite.setImageResource(R.drawable.outline_favorite_border_24)
-        }
+            if (product.isFavorite) {
+                binding.btnFavorite.setImageResource(R.drawable.favorite_fill)
+            } else {
+                binding.btnFavorite.setImageResource(R.drawable.outline_favorite_border_24)
+            }
 
         }
     }

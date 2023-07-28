@@ -41,6 +41,8 @@ class ElementsFragment : Fragment() {
             adapter.notifyDataSetChanged()
         }
         viewModel.getProducts()
+
+
     }
 
 }

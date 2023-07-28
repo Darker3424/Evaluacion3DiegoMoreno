@@ -7,7 +7,7 @@ data class Product (
     val fullName: String,
     val title: String,
     val family: String,
-    val isFavorite: Boolean = false,
+    val isFavorite: Boolean,
     val imgUrl: String = ""
 )
 
